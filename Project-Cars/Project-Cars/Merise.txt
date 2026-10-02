@@ -1,0 +1,63 @@
+Mcp
+
++-----------------+      1       +------------------+      N     +--------------+
+|    Marque       |<-------------|     Modèle       |----------->|   Voiture    |
++-----------------+              +------------------+            +--------------+
+| ID_Marque (PK)  |              | ID_Modèle (PK)   |            | ID_Voiture (PK) |
+| Nom_Marque      |              | Nom_Modèle       |            | Prix            |
+|                 |              | ID_Marque (FK)   |            | Kilométrage     |
+|                 |              |                  |            | Année           |
++-----------------+              +------------------+            | Chevaux         |
+                                                                 | ID_Marque (FK)  |
+                                                                 | ID_Modèle (FK)  |
+                                                                 | ID_Énergie (FK) |
+                                                                 | ID_BoîteVitesse(FK)|
+                                                                 +------------------+
+
+                                                                | 1                   | 1                       
+                                                                |                     |                          
+                                                                v                     v                          
+                                                 +---------------+               +---------------------+ 
+                                                |   Énergie      |               |  BoîteVitesse       |   
+                                                +----------------+               +---------------------+ 
+                                                | ID_Énergie (PK)|               | ID_BoîteVitesse (PK)|
+                                                | Type_Énergie   |               | Type_BoîteVitesse   |
+                                                +----------------+               +---------------------+
+
+
+
+
+mld
+
+Voiture :
+
+ID_Voiture : INT (clé primaire)
+Prix : Int
+Kilométrage : INT
+Année : DATE
+Chevaux : INT
+ID_Marque : INT (clé étrangère vers Marque)
+ID_Modèle : INT (clé étrangère vers Modèle)
+ID_Énergie : INT (clé étrangère vers Énergie)
+ID_BoîteVitesse : INT (clé étrangère vers BoîteVitesse)
+
+Marque :
+
+ID_Marque : INT (clé primaire)
+Nom_Marque : VARCHAR(100)
+
+Modèle :
+
+ID_Modèle : INT (clé primaire)
+Nom_Modèle : VARCHAR(100)
+ID_Marque : INT (clé étrangère vers Marque)
+
+Énergie :
+
+ID_Énergie : INT (clé primaire)
+Type_Énergie : VARCHAR(50) (par exemple, essence, diesel, électrique)
+
+BoîteVitesse :
+
+ID_BoîteVitesse : INT (clé primaire)
+Type_BoîteVitesse : VARCHAR(50) (manuelle, automatique)

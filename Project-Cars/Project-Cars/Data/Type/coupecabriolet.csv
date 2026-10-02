@@ -1,0 +1,6 @@
+,Modele,Marque,Prix,Energie,Kilometre,Annee,Boites de vitesse,Chevaux,options
+0,M4 cabriolet,BMW,59900,Essence,32743,2017,Automatique,431,"['gps', 'tete_haute', 'bluetooth', 'clim_auto', 'regulateur_vitesse', 'feux_led', 'jantes_alliage']"
+1,Mc20 cielo,MASERATI,359990,Essence,200,2025,Automatique,630,"['gps', 'tete_haute', 'bluetooth', 'clim_auto', 'regulateur_vitesse', 'feux_led', 'jantes_alliage']"
+2,M4 cabriolet,BMW,122900,Essence,9815,2022,Automatique,510,"['gps', 'tete_haute', 'bluetooth', 'clim_auto', 'regulateur_vitesse', 'feux_led', 'jantes_alliage']"
+3,M4 cabriolet,BMW,45599,Essence,74384,2015,Manuelle,431,"['gps', 'tete_haute', 'bluetooth', 'clim_auto', 'regulateur_vitesse', 'feux_led', 'jantes_alliage']"
+4,Serie 4 cabriolet,BMW,22299,Diesel,101552,2015,Automatique,184,"['gps', 'tete_haute', 'bluetooth', 'clim_auto', 'regulateur_vitesse', 'feux_led', 'jantes_alliage']"
